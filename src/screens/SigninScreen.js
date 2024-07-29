@@ -28,6 +28,14 @@ const SigninScreen = ({ navigation }) => {
     }
   };
 
+  const navigateToSignup = () => {
+    navigation.navigate('Signup');
+  }
+
+  const navigateToForgotPassword =() => {
+    navigation.navigate('ForgotPassword');
+  }
+
   const handleGoogleLoginSuccess = (userInfo) => {
     console.log('Google Login Success:', userInfo);
     navigation.navigate('Profile');
@@ -73,10 +81,10 @@ const SigninScreen = ({ navigation }) => {
             />
             <CustomButton title="Login" onPress={handleSignin} />
             <View style={styles.spaceBetween}>
-              <TouchableOpacity>
+              <TouchableOpacity onPress={navigateToSignup} >
                 <Text style={styles.linkText}>Create new account</Text>
               </TouchableOpacity>
-              <TouchableOpacity>
+              <TouchableOpacity onPress={navigateToForgotPassword} >
                 <Text style={styles.linkText}>Forgot Password?</Text>
               </TouchableOpacity>
             </View>
@@ -109,10 +117,10 @@ const SigninScreen = ({ navigation }) => {
               />
               <CustomButton title="Login" onPress={handleSignin} />
               <View style={styles.spaceBetween}>
-                <TouchableOpacity>
+                <TouchableOpacity onPress={navigateToSignup} >
                   <Text style={styles.linkText}>Create new account</Text>
                 </TouchableOpacity>
-                <TouchableOpacity>
+                <TouchableOpacity onPress={navigateToForgotPassword} >
                   <Text style={styles.linkText}>Forgot Password?</Text>
                 </TouchableOpacity>
               </View>
@@ -128,11 +136,16 @@ const SigninScreen = ({ navigation }) => {
           placeholder="Search for a country"
           title="Country/Region"
         />
-        <GoogleLoginButton 
-        onLoginSuccess={handleGoogleLoginSuccess}
-        onLoginFailure={handleGoogleLoginFailure}
-        />
-      </View>
+        <View style={styles.anotherSigninContainer}>
+        <Text style={styles.signInText} >or sign in with</Text>
+          <View style={styles.anotherSignin}>
+            <GoogleLoginButton 
+            onLoginSuccess={handleGoogleLoginSuccess}
+            onLoginFailure={handleGoogleLoginFailure}
+            />
+          </View>
+        </View>
+      </View>$
     </View>
   );
 };

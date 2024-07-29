@@ -5,7 +5,7 @@ export default StyleSheet.create({
   backdrop: {
     flex: 1,
     alignItems: 'center',
-    backgroundColor: '#0D0D0D'
+    backgroundColor: '#ccc'
   },
   container: {
     flex: 1,
@@ -84,5 +84,24 @@ export default StyleSheet.create({
   dropdownText: {
     fontWeight: '500',
     color: 'black'
+  },
+  anotherSigninContainer: {
+    position: 'relative',
+  },
+  anotherSignin: {
+    marginTop: 15,
+    paddingVertical: 10,
+    borderTopWidth: 1,
+    borderColor: '#ccc'
+  },
+  signInText: {
+    position: 'absolute',
+    alignSelf: 'center',
+    textAlign: 'center',
+    paddingVertical: 5,
+    paddingHorizontal: 5,
+    backgroundColor: '#f8f8f8',
+    fontWeight: '600',
+    zIndex: 1
   },
 });

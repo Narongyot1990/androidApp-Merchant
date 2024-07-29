@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "298956623613",
+    "project_id": "stylex-bd046",
+    "storage_bucket": "stylex-bd046.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:298956623613:android:ac18f78f958221bcd3f894",
+        "android_client_info": {
+          "package_name": "com.stylex"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "298956623613-jtov7d396400806586qv9irhb1f5soon.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.stylex",
+            "certificate_hash": "aed01465095a90ab75e7793bd3b873067a58f6db"
+          }
+        },
+        {
+          "client_id": "298956623613-62md0rh45cp637v24ukddfpbqe653hfk.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDEipJwXgkXH1Vqu2MRP0Gg9hAcA-o29Os"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "298956623613-1a3aaq0djpsoomad54hqn5fdgl7r0upv.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

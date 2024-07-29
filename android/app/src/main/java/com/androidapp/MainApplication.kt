@@ -1,4 +1,4 @@
-package com.androidapp
+package com.stylex
 
 import android.app.Application
 import com.facebook.react.PackageList

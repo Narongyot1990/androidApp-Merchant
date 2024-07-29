@@ -7,6 +7,7 @@ const ProfileScreen = ({ navigation }) => {
     <View>
       <Text>Welcome to your profile!</Text>
       <Button title="Back to Home" onPress={() => navigation.navigate('Home')} />
+      <Button title="Back to Home" onPress={() => navigation.navigate('Signin')} />
     </View>
   );
 };

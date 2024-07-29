@@ -1,8 +1,12 @@
 // src/components/GoogleLoginButton.js
 import React, { useEffect } from 'react';
-import { View, Text, TouchableOpacity, Alert } from 'react-native';
+import { View, Text, TouchableOpacity, Alert, Image } from 'react-native';
 import { GoogleSignin, statusCodes } from '@react-native-google-signin/google-signin';
 import styles from '../styles/GoogleSignInStyle'
+
+// นำเข้าภาพจากโฟลเดอร์ src/assets/images
+const googleLogo = require('../assets/images/google_logo.png');
+
 
 const GoogleLoginButton = ({ onLoginSuccess, onLoginFailure }) => {
 
@@ -40,7 +44,11 @@ const GoogleLoginButton = ({ onLoginSuccess, onLoginFailure }) => {
 
   return (
     <TouchableOpacity style={styles.button} onPress={signIn}>
-      <Text style={styles.buttonText}>Login with Google</Text>
+      <Image 
+        source={googleLogo} // ใช้ภาพที่นำเข้า
+        style={styles.image} // กำหนดสไตล์ของภาพ
+      />
+      <Text style={styles.buttonText}>Google</Text>
     </TouchableOpacity>
   );
 };

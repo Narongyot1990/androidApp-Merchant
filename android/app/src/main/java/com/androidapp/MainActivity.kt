@@ -1,4 +1,4 @@
-package com.androidapp
+package com.stylex
 
 import com.facebook.react.ReactActivity
 import com.facebook.react.ReactActivityDelegate
