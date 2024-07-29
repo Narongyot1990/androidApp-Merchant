@@ -1,6 +1,4 @@
 // src/screens/CreateOrder.js
-//<Image style={styles.menuImage} source={require=(item.image)} />
-// src/screens/CreateOrder.js
 import React, { useState } from 'react';
 import { View, Text, TouchableOpacity, Image, StyleSheet, FlatList, Modal, TextInput, Button } from 'react-native';
 import initialMenuData from '../data/initialMenuData';
