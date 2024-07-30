@@ -3,7 +3,6 @@ import React, { useRef, useEffect, useState } from 'react';
 import { View, Text, Image, TouchableOpacity, Animated } from 'react-native';
 import styles from '../styles/homeStyle';
 
-// Define your icons data
 const iconsData = [
   {
     id: 1,
